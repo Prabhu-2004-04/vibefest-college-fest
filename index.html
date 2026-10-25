@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VibeFest — a college fest landing page frontend practice project.">
+  <title>VibeFest 2026 — Feel the Energy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="live-dot"></span> REGISTRATIONS ARE OPEN <span class="announcement-sep">/</span> <a href="#register">Get your pass ↗</a></div>
+  <header class="header">
+    <a class="logo" href="#home"><span class="logo-icon">V</span> VIBE<span>FEST</span><small>’26</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#events">Events</a><a href="#schedule">Schedule</a><a href="#about">About</a><a href="#faq">FAQs</a>
+      <a class="nav-pass" href="#register">Get your pass <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-shape shape-a"></div><div class="hero-bg-shape shape-b"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span>✳</span> THE BIGGEST CAMPUS CELEBRATION</p>
+        <h1>Make some<br><span>noise.</span> Make<br>memories.</h1>
+        <p class="hero-desc">Two unforgettable days of music, creativity, competition, and campus culture. This is your moment to show up and stand out.</p>
+        <div class="hero-details"><span>📍 <b>University Campus</b></span><span>📅 <b>20–21 November, 2026</b></span></div>
+        <div class="hero-actions"><a href="#register" class="btn btn-primary">Get your pass <span>↗</span></a><a href="#events" class="btn btn-ghost"><span class="play">▶</span> Explore events</a></div>
+        <div class="hero-note"><span class="tiny-avatars">✦ ✦ ✦</span> Bring your crew. Bring your energy.</div>
+      </div>
+      <div class="hero-art" aria-label="Abstract festival poster illustration">
+        <div class="poster poster-back"><span>LIVE</span><b>LOUD</b></div>
+        <div class="poster poster-front"><div class="poster-top"><span>VIBE FEST</span><span>20—21 NOV</span></div><div class="poster-sun"></div><div class="poster-type">FEEL<br>THE<br><i>ENERGY</i></div><div class="poster-bottom"><span>MUSIC · ART · CULTURE</span><span>’26</span></div></div>
+        <div class="sticker sticker-top">NO<br>BAD<br>VIBES ✳</div><div class="sticker sticker-bottom">2 DAYS<br>ALL IN</div><span class="art-star star-a">✳</span><span class="art-star star-b">✦</span>
+      </div>
+      <div class="hero-side-label">CREATE · CONNECT · CELEBRATE</div>
+    </section>
+
+    <section class="ticker" aria-label="Festival categories"><div>LIVE MUSIC <span>✳</span> DANCE BATTLES <span>✳</span> CREATIVE SHOWCASE <span>✳</span> GAMING ARENA <span>✳</span> CAMPUS CULTURE <span>✳</span> LIVE MUSIC <span>✳</span> DANCE BATTLES <span>✳</span></div></section>
+
+    <section class="section events" id="events">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR STAGE</p><h2>Something for<br><span>every vibe.</span></h2></div><p>Compete, perform, create, or just soak it all in. Pick your thing and make it count.</p></div>
+      <div class="event-grid">
+        <article class="event-card event-music"><div class="event-number">01 / MUSIC</div><div class="event-graphic graphic-music">♫</div><div class="event-info"><div><h3>Soundwave Live</h3><p>Live bands · Open mic · DJ sets</p></div><a href="#register" aria-label="Register for Soundwave Live">↗</a></div></article>
+        <article class="event-card event-dance"><div class="event-number">02 / DANCE</div><div class="event-graphic graphic-dance">✳</div><div class="event-info"><div><h3>Move Mode</h3><p>Dance battles · Crew showcase</p></div><a href="#register" aria-label="Register for Move Mode">↗</a></div></article>
+        <article class="event-card event-creative"><div class="event-number">03 / CREATIVE</div><div class="event-graphic graphic-creative">✎</div><div class="event-info"><div><h3>Make & Create</h3><p>Art · Design · Photography</p></div><a href="#register" aria-label="Register for Make and Create">↗</a></div></article>
+        <article class="event-card event-game"><div class="event-number">04 / GAMING</div><div class="event-graphic graphic-game">⌁</div><div class="event-info"><div><h3>Level Up Arena</h3><p>Esports · Mini games · Challenges</p></div><a href="#register" aria-label="Register for Level Up Arena">↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="schedule section" id="schedule">
+      <div class="schedule-head"><div><p class="eyebrow">SAVE THE MOMENT</p><h2>Two days.<br><span>Full volume.</span></h2></div><div class="day-switch"><button class="day-btn active" data-day="one">DAY 01 <small>20 NOV</small></button><button class="day-btn" data-day="two">DAY 02 <small>21 NOV</small></button></div></div>
+      <div class="timeline" id="timeline">
+        <article class="timeline-row"><time>10:00 AM</time><span class="timeline-dot"></span><div><span class="tag tag-orange">OPENING</span><h3>Doors Open & Welcome</h3><p>Collect your pass, find your crew, and explore the festival grounds.</p></div><span class="timeline-place">MAIN STAGE</span></article>
+        <article class="timeline-row"><time>12:00 PM</time><span class="timeline-dot"></span><div><span class="tag tag-blue">CREATIVE</span><h3>Campus Creators Showcase</h3><p>Discover student art, design, photography, and ideas.</p></div><span class="timeline-place">ART ZONE</span></article>
+        <article class="timeline-row"><time>03:00 PM</time><span class="timeline-dot"></span><div><span class="tag tag-purple">DANCE</span><h3>Move Mode Battles</h3><p>Crews take the floor for high-energy dance face-offs.</p></div><span class="timeline-place">ARENA</span></article>
+        <article class="timeline-row"><time>06:30 PM</time><span class="timeline-dot"></span><div><span class="tag tag-pink">LIVE MUSIC</span><h3>Soundwave After Hours</h3><p>End day one with live performances and festival lights.</p></div><span class="timeline-place">MAIN STAGE</span></article>
+      </div>
+      <p class="schedule-disclaimer">Sample schedule for this concept website. Event details can be customized by the organizer.</p>
+    </section>
+
+    <section class="about section" id="about"><div class="about-art"><div class="about-circle">V<br><span>’26</span></div><span class="about-label label-one">MAKE IT YOURS ↗</span><span class="about-label label-two">ALL TOGETHER NOW ✳</span></div><div class="about-copy"><p class="eyebrow">NOT JUST ANOTHER EVENT</p><h2>One campus.<br><span>A thousand stories.</span></h2><p>VibeFest is a student-led festival concept built around the things that bring people together: music, art, friendly competition, and shared experiences.</p><p>Come for your favorite event. Stay for the people, the surprises, and the memories you’ll talk about long after the lights go down.</p><a class="text-link" href="#register">Be part of the story <span>↗</span></a></div></section>
+
+    <section class="register section" id="register"><div class="register-content"><p class="eyebrow">YOUR CREW IS WAITING</p><h2>Don’t just hear<br>about it <span>later.</span></h2><p>Get on the list and be ready for two days of campus energy.</p><form id="passForm" class="pass-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Enter your email address" required><button type="submit">Join the list <span>↗</span></button></form><p class="form-note" id="formNote">Demo only — no information is sent to a server.</p></div><div class="register-stamp">VIBE<br><span>FEST</span><small>20—21 NOV · ’26</small></div></section>
+
+    <section class="faq section" id="faq"><div><p class="eyebrow">GOOD TO KNOW</p><h2>Quick <span>FAQs.</span></h2></div><div class="faq-list">
+      <details><summary>Who can attend VibeFest? <span>+</span></summary><p>This sample event is designed for students and invited guests. Replace this text with your actual entry policy.</p></details>
+      <details><summary>Do I need to register for events? <span>+</span></summary><p>Some activities may require sign-up. Check the event details and update this section with your registration process.</p></details>
+      <details><summary>Where will the festival happen? <span>+</span></summary><p>The demo venue is listed as University Campus. Add your college name, venue map, and directions here.</p></details>
+    </div></section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#home"><span class="logo-icon">V</span> VIBE<span>FEST</span><small>’26</small></a><p>Made for campus culture and good energy.</p><div class="footer-links"><a href="#events">Events</a><a href="#schedule">Schedule</a><a href="#register">Register</a></div><small class="copyright">© <span id="year"></span> VibeFest concept website. Student frontend project.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
